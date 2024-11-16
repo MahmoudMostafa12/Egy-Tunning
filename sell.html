@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- start form -->
+    <div class="form">
+        <div class="container">
+            <div class="title">
+                <h2>بيع عربيتك بكل سهولة في مصر</h2>
+                <p>في اقل من دقيقة تقدر تبيع عربيتك هتضيف فقط معلومات الخاصة بالعربية وكل دا مجانا</p>
+            </div>
+            <div class="pic">
+                <div class="user-img">
+                    <img src="#" id="photo">
+                    <input type="file" id="file" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file" id="uploadbtn"><i class="fa-solid fa-camera"></i></label>
+                </div>
+                <div class="user-img">
+                    <img src="#" id="photo1">
+                    <input type="file" id="file1" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file1" id="uploadbtn1"><i class="fa-solid fa-camera"></i></label>
+                </div>
+                <div class="user-img">
+                    <img src="#" id="photo2">
+                    <input type="file" id="file2" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file2" id="uploadbtn2"><i class="fa-solid fa-camera"></i></label>
+                </div>
+            </div>
+            <div class="pic">
+                <div class="user-img">
+                    <img src="#" id="photo3">
+                    <input type="file" id="file3" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file3" id="uploadbtn3"><i class="fa-solid fa-camera"></i></label>
+                </div>
+                <div class="user-img">
+                    <img src="#" id="photo4">
+                    <input type="file" id="file4" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file4" id="uploadbtn4"><i class="fa-solid fa-camera"></i></label>
+                </div>
+                <div class="user-img">
+                    <img src="#" id="photo5">
+                    <input type="file" id="file5" accept="image/jpeg, image/png, image/jpg">
+                    <label for="file5" id="uploadbtn5"><i class="fa-solid fa-camera"></i></label>
+                </div>
+            </div>
+            <form>
+
+                <div class="inf">
+                    <input list="CARS" name="CARS" placeholder="نوع السيارة">
+                    <datalist id="CARS">
+                        <option value="بي ام دابليو">
+                        <option value="تويوتا">
+                        <option value="ميرسيدس">
+                        <option value="رانج روفر">
+                        <option value="مازدا">
+                        <option value="ميني كوبر">
+                        <option value="ميتسوبيشي">
+                        <option value="بورش">
+                        <option value="رينو">
+                        <option value="اوبل">
+                        <option value="فولكس فاجن">
+                        <option value="فولفو">
+                        <option value="فورد">
+                        <option value="هوندا">
+                        <option value="اودي">
+                        <option value="شيفروليه">
+                        <option value="سيتروين">
+                        <option value="دايو">
+                        <option value="جاكور">
+                        <option value="جييب">
+                        <option value="نيسان">
+                        <option value="بيجو">
+                        <option value="سيات">
+                        <option value="سكودا">
+                        <option value="هيونداي">
+                        <option value="سوبارو">
+                        <option value="لكزس">
+                        <option value="فيات">
+                    </datalist>
+                    <input type="text" placeholder="موديل السيارة">
+                    <div class="number">
+                        <input type="number" placeholder="عدد الكيلومترات">
+                        <input type="number" placeholder="سنة الصنع">
+                    </div>
+                    <input type="text" placeholder="شرح مختصر عن حالة السيارة">
+                    <div class="number">
+                        <input type="number" placeholder="السعر">
+                        <input type="text" placeholder="رقم التليفون">
+                    </div>
+                    <div class="checkbox">
+                        <div class="auto">
+                            <input type="checkbox" value="أوتوماتيك">
+                            <label>أوتوماتيك</label>
+                        </div>
+                        <div class="manual">
+                            <input type="checkbox" value="مانيوال">
+                            <label>مانيوال</label>
+                        </div>
+                    </div>
+
+                    <button type="submit">أضافة المعلومات</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end form -->
+    <script>
+        let pic = document.getElementById("photo")
+        let file = document.getElementById("file")
+
+        file.onchange = function () {
+            pic.src = URL.createObjectURL(file.files[0]);
+        }
+
+        let pic1 = document.getElementById("photo1")
+        let file1 = document.getElementById("file1")
+
+        file1.onchange = function () {
+            pic1.src = URL.createObjectURL(file1.files[0]);
+        }
+
+        let pic2 = document.getElementById("photo2")
+        let file2 = document.getElementById("file2")
+
+        file2.onchange = function () {
+            pic2.src = URL.createObjectURL(file2.files[0]);
+        }
+
+        let pic3 = document.getElementById("photo3")
+        let file3 = document.getElementById("file3")
+
+        file3.onchange = function () {
+            pic3.src = URL.createObjectURL(file3.files[0]);
+        }
+
+        let pic4 = document.getElementById("photo4")
+        let file4 = document.getElementById("file4")
+
+        file4.onchange = function () {
+            pic4.src = URL.createObjectURL(file4.files[0]);
+        }
+
+        let pic5 = document.getElementById("photo5")
+        let file5 = document.getElementById("file5")
+
+        file5.onchange = function () {
+            pic5.src = URL.createObjectURL(file5.files[0]);
+        }
+    </script>
+</body>

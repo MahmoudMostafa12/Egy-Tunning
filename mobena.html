@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a class="active" href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+
+    <div class="part">
+        <div class="container">
+            <div class="image">
+                <img src="../egytuning/image/carpart/mobena.jpeg">
+            </div>
+            <div class="text">
+                <h1>الموبينه</h1>
+                <p>تعتبر موبينة السيارة" Ignition Coil " من الأجزاء الكهربائية، وهي جزء من نظام الإشعال، ويطلق عليها
+                    أسماء أخرى مثل ملف
+                    الإشعال، والكويل، ويتلخص عملها في تحويل فرق الجهد المنخفض الصادر عن البطارية (12 فولت) إلى فرق جهد
+                    مرتفع يصل إلى (12 ألف
+                    فولت) حتى تتمكن شمعات الاحتراق (البواجي) من تكوين شرارة إشعال داخل حجرة الاحتراق بالمحرك، من أجل
+                    إشعال خليط الوقود
+                    والهواء المضغوطين.</p>
+                <br>
+                <br>
+                <p>و تعتبر وظيفة الموبينة أساسية في عمل السيارة، وفي حال تعرضها لخلل أو تلف كامل، فإن أداء المحرك يتأثر
+                    بعدة جوانب، وللتعرف
+                    أكثر على أعطال موبينة السيارة، وفق (سيدتي).</p>
+                <h2>علامات عطل موبينة السيارة</h2>
+                <p>تظهر جميع العلامات المتعلقة بعطل الموبينة في أداء المحرك بشكل أو بآخر، وفيما يلي أهم هذه العلامات:
+                </p>
+                <h3>فقدان قوة المحرك:</h3>
+                <p>في حال توقف الموبينة عن العمل أو عملها بشكل متقطع، فإن تسلسل الاحتراق داخل المحرك ينقطع، وبالتالي لن
+                    يولد القوة الكافية
+                    أو المناسبة لتحريك السيارة، كما يمكن ملاحظة عدم ثبات عدد دورات المحرك أثناء الوقوف، وينصح في حال
+                    ملاحظة فقدان المحرك
+                    للعزم التوجه للصيانة لتفادي أضرار أخرى.</p>
+                <h3>زيادة استهلاك الوقود:</h3>
+                <p>عندما لا تعمل الموبينة بالشكل المطلوب، فإن المحرك يفقد جزءاً من قوته، ولتعويض ذلك يحتاج لاستهلاك
+                    المزيد من الوقود لإنتاج
+                    عزم كاف لتحريك السيارة.</p>
+                <h3>احتراق الوقود في العادم:</h3>
+                <p>تظهر هذه العلامة في حال لم توفر الموبينة فرق الجهد الكافي لإشعال الوقود داخل حجرة الاحتراق، وينتج عنه
+                    خروج الوقود إلى
+                    أنابيب العادم واحتراقه بداخلها، ويرافق هذه العلامة خروج دخان أسود من العادم وراحة وقود قوية، كما
+                    يمكن أن تصدر أصوات من
+                    المحرك على شكل قرقعة نتيجة عدم احتراق الوقود في إحدى الاسطوانات (حجرة الاحتراق).</p>
+                <h3>توقف المحرك عن العمل:</h3>
+                <p>يحتاج المحرك كي يعمل إلى حد أدنى من عمليات الاحتراق، وبالتالي في حال تلف الموبينة بشكل كامل لأكثر من
+                    شمعة احتراق، فإن
+                    المحرك لن يعمل قبل أن يتم استبدالها.</p>
+                <h3>ظهور إشارة فحص المحرك:</h3>
+                <p>يراقب كمبيوتر (كنترول) السيارة عمل المحرك بشكل مستمر، وفي حال وجود خلل مثل عطل الموبينة، فإنه يظهر كي
+                    ينبه السائق للتحقق
+                    من عمل المحرك.</p>
+                <br>
+                <br>
+                <h2>أسباب تعطل موبينة السيارة</h2>
+                <p>تتعرض الموبينة لعدة عوامل تجعلها تتوقف عن العمل، أو أن تعمل بكفاءة أقل، وفيما يلي أبرز هذه العوامل:
+                </p>
+                <h3>تلف شمعات الاحتراق (البواجي):</h3>
+                <p>يؤدي تلف البواجي أو رداءتها إلى زيادة العبء على الموبينة، وذلك لإصدار فرق جهد أعلى من المطلوب كي تعمل
+                    البواجي، ومع
+                    استمرار هذا الأمر تتعرض الموبينة للتلف.</p>
+                <h3>الاهتزازات:</h3>
+                <p>تثبت الموبينة على جسم المحرك بشكل مباشر، وفي حال تعرضها للاهتزاز سواء بسبب المحرك أو ظروف الطريق،
+                    فإنه مع مرور الوقت
+                    تتعرض للتلف بسبب تقطع توصيلاتها أو تشقق المواد العازلة المحيطة بها.</p>
+                <h3>ارتفاع الحرارة:</h3>
+                <p>تصمم الموبينة لتحمل درجات حرارة معينة داخل حجرة المحرك، ولكن في حال ارتفاع الحرارة لقيم أعلى من
+                    المحدد، فإنها تفقد جزءاً
+                    من خصائصها في توصيل الكهرباء، وبالتالي لن تنتج فرق الجهد المطلوب لتشغيل شمعات الاحتراق</p>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>CARS</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos
+                    iste
+                    aspernatur
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Important Link 1</a></li>
+                    <li><a href="#">Important Link 2</a></li>
+                    <li><a href="#">Important Link 3</a></li>
+                    <li><a href="#">Important Link 4</a></li>
+                    <li><a href="#">Important Link 5</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20123456789</span>
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img decoding="async" src="imgs/gallery-01.png" alt="" />
+                <img decoding="async" src="imgs/gallery-02.png" alt="" />
+                <img decoding="async" src="imgs/gallery-03.jpg" alt="" />
+                <img decoding="async" src="imgs/gallery-04.png" alt="" />
+                <img decoding="async" src="imgs/gallery-05.jpg" alt="" />
+                <img decoding="async" src="imgs/gallery-06.png" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End Footer -->
+</body>
+
+</html>

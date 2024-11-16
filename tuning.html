@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html"> سيارات للبيع</a></li>
+                <li><a class="active" href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                     المؤثرين في عالم السيارات</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+    <div class="fix">
+        <h2 class="main-title">التعديل</h2>
+        <p>أفضل الأماكن التي يمكن من خلالها تعديل السيارات وأكثر خبرة في مجال التعديل</p>
+        <div class="container">
+            <div class="box">
+                <img src="../egytuning/image/places/belal-bm.jpg">
+                <div class="content">
+                    <h3>بلال بي إم</h3>
+
+                    <p> التخصص : تعديل اضاءة السيارات للعمل بكفاءة اقوى.</p>
+                    <p>العنوان : أرض المزاد، قسم ثان 6 أكتوبر، محافظة الجيزة     </p>
+                    <p>رقم التليفون : 01200765649 </p>
+                </div>
+                <div class="info">
+                    <a href="https://www.google.com/maps/place/Belal+BM+Garage/@29.9508479,30.9150382,17z/data=!4m6!3m5!1s0x1458579f14fd3ac9:0x74693dd1dc836fb9!8m2!3d29.9521215!4d30.9147914!16s%2Fg%2F11pkbtjv7v?hl=ar&entry=ttu">موقع المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/eltayeb.jpg">
+                <div class="content">
+                    <h3>الطيب لإكسسوارات السيارات</h3>
+
+                    <p> التخصص :  بيع إكسسورات السيارات  .</p>
+                    <p>العنوان :  السلام، السلام الغربية، قسم أول السلام، محافظة القاهرة</p>
+                    <p>رقم التليفون : 01112426662</p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/8xvTXjGPfCBK9vH87">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/crank.jpg">
+                <div class="content">
+                    <h3>كرانك بيرفورمانس </h3>
+
+                    <p> التخصص : تعديل وصيانة السيارات من انتاج شركة بي إم دابليو.
+                    </p>
+                    <p>العنوان : المنطقة الصناعية، قسم ثالث القاهره الجديده، محافظة القاهرة</p>
+                    <p>رقم التليفون : 01555135395</p>
+                </div>
+                <div class="info">
+                    <a href="https://maps.app.goo.gl/Muoko38sC4iAkUak6">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/sens.jpg">
+                <div class="content">
+                    <h3> سينس بيرفورمانس</h3>
+
+                    <p> التخصص : تعديل شكمانات السيارات الرياضية.</p>
+                    <p>العنوان :  المنطقة الصناعية بالتجمع الخامس، محافظة القاهرة</p>
+                    <p>رقم التليفون : 01060532188 </p>
+                </div>
+                <div class="info">
+                    <a href="https://maps.app.goo.gl/1JYCXp8nDdCKLyHSA">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/stance_thug.jpg">
+                <div class="content">
+                    <h3>ستانس ثج</h3>
+
+                    <p>  التخصص : بيع وتركيب مساعدين هوائية للسيارات (air suspension).</p>
+                    <p>العنوان : شارع المرور الجديد، مدينة دمياط الجديدة، محافظة دمياط </p>
+                    <p>رقم التليفون :  لا يوجد </p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/nJeLoARBfz6ywY5u5">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/mkz.jpg">
+                <div class="content">
+                    <h3>MKZ </h3>
+
+                    <p>  التخصص : قياس قوة سيارت السباق وصيانتها الراعي الرسمي لبعض المتسابقين .</p>
+                    <p>العنوان : الظهير الصحراوى العاشر من رمضان، محافظة الشرقية  </p>
+                    <p>رقم التليفون : لا يوجد </p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/fYMqYme3zER31Qty9">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/noise_maker.jpg">
+                <div class="content">
+                    <h3>نويز ميكر</h3>
+
+                    <p>  التخصص : بيع وتركيب الأجهزة الصوتية والسماعات للسيارات .</p>
+                    <p>العنوان : ميدان الاسماعيليه، 30 شبين، البستان، قسم مصر الجديدة، محافظة القاهرة </p>
+                    <p>رقم التليفون : 01093204468 </p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/CQcPQQRhDXt3zBLHA">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/revlimit.jpeg">
+                <div class="content">
+                    <h3>ريف ليميت</h3>
+
+                    <p>  التخصص : تعديل السيارات ميكانيكيا ورفع من قوتها الحصانيةوموزع معتمد لقطع غيار (APR) .</p>
+                    <p>العنوان : 1  شارع 9، المقطم، محافظة القاهرة </p>
+                    <p>رقم التليفون : 01110706666 </p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/xgUJZZw3Fx6V8TqK8">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/phantom.jpg">
+                <div class="content">
+                    <h3>فانتوم</h3>
+
+                    <p>  التخصص : رش وسمكرة وتصليح السيارات بتكنولوجيا عالية وبأفكار مختلفة .</p>
+                    <p>العنوان : داخل شركة بيبسى، حى السفارات، مدينة نصر، محافظة القاهرة </p>
+                    <p>رقم التليفون : 01118461608 </p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://maps.app.goo.gl/Bh7a1tCZDkE3qv2N8">موقع
+                        المركز</a>
+                </div>
+            </div>
+        </div>
+</body>

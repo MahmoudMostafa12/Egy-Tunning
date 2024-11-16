@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a class="active" href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+    <!-- start buy -->
+    <div class="buy">
+        <div class="container">
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/rangerover.png"></a>
+                </div>
+            </div>
+
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/BMW.html"><img src="../egytuning/image/brands/bmw.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/mazda.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/minicoper.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/mitsubishi.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/porsche.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/renault.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/opel.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/volkswagen.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/volvo.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/ford.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/honda.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/audi.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/chevrolet.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/citroen (2).png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/daewoo.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/jaguar.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/jeep.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/nissan.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/peugeot.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/seat.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/skoda.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/toyota.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/hyundai (2).png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/subaru.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/lexus.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/fiat.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"><img src="../egytuning/image/brands/mercedes.png"></a>
+                </div>
+            </div>
+            <div class="brand">
+                <div class="image">
+                    <a href="../egytuning/test-page.html"> <img src="../egytuning/image/brands/kia.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end buy -->
+</body>

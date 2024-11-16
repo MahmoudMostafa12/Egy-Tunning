@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a class="active" href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+    <div class="fix">
+        <h2 class="main-title">الإصلاح</h2>
+        <p>جميع االأماكن الموثوق بها التي من الممكن الأحتياج إليها لصيانة السيارات</p>
+        <div class="container">
+            <div class="box">
+                <img src="../egytuning/image/places/Untitled.jpeg">
+                <div class="content">
+                    <h3>مركز أوتو جو</h3>
+
+                    <p> التخصص : الأصلاح والصيانات الدورية للسيارات.</p>
+                    <p>العنوان : المنصورية هرم - مدينة نصر</p>
+                    <p>رقم التليفون : 01002003232 - 01144344440</p>
+                </div>
+                <div class="info">
+                    <a href="https://www.google.com/maps/dir/
+                        /5FH9%2BQ53+Auto+Go+%D8%A7%D9%88%D8%AA%D9%88+%D8%AC%D9%88,
+                        +%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1%D8%8C+%D9%85%D8%AD%D8%
+                        A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9+6360073%
+                        E2%80%AD/@30.240479,31.4954643,12z/data=!4m8!4m7!1m0!1m5!1m1!1s
+                        0x14581b7d6d34a105:0xc993b802565d0653!2m2!1d31.4686347!2d30.179439?entry=ttu">موقع المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/caps auto.jpeg">
+                <div class="content">
+                    <h3>مركز كابس أوتو</h3>
+
+                    <p> التخصص : لصيانة السيارات الجديدة.</p>
+                    <p>العنوان : العبور - مدينة نصر الحي العاشر</p>
+                    <p>رقم التليفون : 22697337 - 22695432</p>
+                </div>
+                <div class="info">
+                    <a
+                        href=https://www.google.com/maps/search/caps+auto/@30.0512402,31.7937454,10z/data=!3m1!4b1?entry=ttu>موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/شساقشبنخ.png">
+                <div class="content">
+                    <h3>مركز أشرفكو</h3>
+
+                    <p> التخصص : إطارات السيارات والجنوط والبطاريات وضبط الزوايا وإصلاح الإطارات.
+                    </p>
+                    <p>العنوان : متعدد الأماكن</p>
+                    <p>رقم التليفون : 33312723</p>
+                </div>
+                <div class="info">
+                    <a href="https://www.google.com/maps/place/%D8%A7%D8%B4%D8%B1%D9%81%D9%83%D9%88-+
+                        Ashrafco+%D9%81%D8%B1%D8%B9+%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B1%E2%80%AD
+                        /@30.0508548,31.7310639,10z/data=!4m10!1m2!2m1!1sashrafco!3m6!1s0x1458174c5b92ea73
+                        :0x4da8ebb4a7e4a4a5!8m2!3d30.125662!4d31.377822!
+                        15sCghhc2hyYWZjb1oKIghhc2hyYWZjb5IBCXRpcmVfc2hvcOABAA!
+                        16s%2Fg%2F11v9_m59s0?entry=ttu">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/Untitled.png">
+                <div class="content">
+                    <h3>مركز ناسيتا</h3>
+
+                    <p> التخصص : فحص وصياانة السيارات ومعاينتها عند البيع.</p>
+                    <p>العنوان : متعدد الأماكن</p>
+                    <p>رقم التليفون : 01006347461 - 0225770077</p>
+                </div>
+                <div class="info">
+                    <a href="https://www.google.com/maps/dir/
+                        /5FH9%2BQ53+Auto+Go+%D8%A7%D9%88%D8%AA%D9%88+%D8%AC%D9%88,
+                        +%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1%D8%8C+%D9%85%D8%AD%D8%
+                        A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D9%84%D9%8A%D9%88%D8%A8%D9%8A%D8%A9+6360073%
+                        E2%80%AD/@30.240479,31.4954643,12z/data=!4m8!4m7!1m0!1m5!1m1!1s
+                        0x14581b7d6d34a105:0xc993b802565d0653!2m2!1d31.4686347!2d30.179439?entry=ttu">موقع
+                        المركز</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/places/fit&fix.png">
+                <div class="content">
+                    <h3>مركز فيت اند فيكس</h3>
+
+                    <p> التخصص : خدمات السيارات على الطرق.</p>
+                    <p>العنوان : اغلبية محطات البنزين</p>
+                    <p>رقم التليفون : 01121147722 - 01124008844</p>
+                </div>
+                <div class="info">
+                    <a
+                        href="https://www.google.com/maps/search/%D9%81%D9%8A%D8%AA+%D8%A7%D9%86%D8%AF+%D9%81%D9%8A%D9%83%D8%B3%E2%80%AD/@30.0757911,31.5370077,11z/data=!3m1!4b1?entry=ttu">موقع
+                        المركز</a>
+                </div>
+            </div>
+        </div>
+</body>

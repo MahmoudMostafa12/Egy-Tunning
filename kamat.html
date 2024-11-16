@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a class="active" href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+
+    <div class="part">
+        <div class="container">
+            <div class="image">
+                <img src="../egytuning/image/carpart/kamat.jpeg">
+            </div>
+            <div class="text">
+                <h1>الكامات</h1>
+                <p>يتيح مستشعر عمود الكامات لنظام التحكم في المحرك أن يحدد الموقع الدقيق لمحرك ذراع الإدارة. تكون
+                    هذه المعلومة ضروريةً
+                    لأسبابٍ عديدة من بينها حساب موعد الإشعال والحقن. يمكنك في هذه الصفحة استقراء كيفية ملاحظة وجود
+                    خلل في مستشعر عمود
+                    الكامات وماهية الأخطاء المفيدة عند تقصي الأخطاء.</p>
+                <h2>وظيفة عمود الكامات في المحرك</h2>
+                <p>عمود الكامات هو جزء ميكانيكي يتحرك مع العمود المرفقي ويعمل على تحويل الحركة الدورانية إلى حركة خطية،
+                    وبالتالي يؤثر في
+                    توقيت فتح وإغلاق صمامات المحرك. يتحكم عمود الكامات في مدة فتح وإغلاق الصمامات، مما يؤثر في أداء
+                    المحرك بشكل عام.</p>
+                <h2>أسباب تلف عمود الكامات</h2>
+                <p>هناك عدة أسباب يمكن أن تؤدي إلى تلف عمود الكامات، بما في ذلك:</p>
+                <p>• نقص التزييت: عندما يحدث نقص في زيت المحرك أو عندما يتعرض زيت التشحيم للتلوث، يزداد احتكاك عمود
+                    الكامات ويتعرض للتآكل.</p>
+                <p>• استخدام غير صحيح للزيت: استخدام زيت غير ملائم أو عدم تغيير الزيت بانتظام يمكن أن يؤدي إلى تلف عمود
+                    الكامات.</p>
+                <p>• تراكم الرواسب: تراكم الرواسب الزيتية أو الشوائب الأخرى في نظام التزييت يمكن أن يعوق تدفق الزيت
+                    ويتسبب في تلف عمود
+                    الكامات.</p>
+                <p>• ارتفاع درجة حرارة المحرك: ارتفاع درجة حرارة المحرك يمكن أن يؤدي إلى تشوه عمود الكامات وتلفه.</p>
+                <h2>أعراض تلف عمود الكامات</h2>
+                <p>1. تقطيع الصوت: عندما يتلف عمود الكامات، قد يحدث صوت قطع أو طقطقة في المحرك أثناء تشغيله. قد يكون هذا
+                    الصوت نتيجة لتآكل
+                    الأسطح وفقدان الانتظام في توقيت الصمامات.</p>
+                <p>2. تقليل القوة والأداء: تلف عمود الكامات يمكن أن يؤدي إلى فقدان القوة والأداء في المحرك. قد يشعر
+                    السائق بتراجع في
+                    استجابة السيارة عند الضغط على دواسة الوقود، وقد تصعب المركبة في التسارع بشكل سلس.</p>
+                <p>3. صعوبة في بدء تشغيل المحرك: عندما يكون عمود الكامات تالفًا، قد يواجه السائق صعوبة في بدء تشغيل
+                    المحرك. قد يتطلب المحرك
+                    بعض الوقت للتحرك بسلاسة بعد تشغيله.</p>
+                <p>4. تدهور استهلاك الوقود: تلف عمود الكامات يمكن أن يؤدي إلى تدهور استهلاك الوقود في السيارة. قد يزيد
+                    استهلاك الوقود أو
+                    يصبح غير كفء، مما يؤدي إلى تكاليف إضافية للسائق.</p>
+                <p>5. ارتفاع درجة حرارة المحرك: عندما يتعرض عمود الكامات للتلف، قد يزيد احتكاك الأجزاء الداخلية للمحرك،
+                    وبالتالي يرتفع درجة
+                    حرارته. قد يشير ارتفاع درجة حرارة المحرك إلى وجود مشكلة في عمود الكامات.</p>
+                <h2>كيفية تشخيص تلف عمود الكامات</h2>
+                <p>لتشخيص تلف عمود الكامات، يمكن اتباع الخطوات التالية:</p>
+                <p>1. الاستماع إلى الأصوات: استمع إلى أي أصوات غير طبيعية تصدر من المحرك أثناء التشغيل.</p>
+                <p>2. فحص ضغط السحب: قم بفحص ضغط السحب في الأسطوانات باستخدام أداة فحص ضغط الاسطوانة. قد يشير انخفاض
+                    الضغط إلى تلف عمود
+                    الكامات.</p>
+                <p>3. التفتيش البصري: قم بفحص عمود الكامات وصمامات المحرك للبحث عن علامات التآكل أو التلف.</p>
+                <p>4. الفحص الكهربائي: قد يتطلب الأمر فحص الأنظمة الكهربائية المتعلقة بعمود الكامات باستخدام أدوات الفحص
+                    المناسبة.</p>
+                <h2>عملية إصلاح واستبدال عمود الكامات</h2>
+                <p>إذا تم تشخيص تلف عمود الكامات، فقد يكون الحل هو إصلاحه أو استبداله تمامًا. يجب على الفني المؤهل أو
+                    الورشة المتخصصة إجراء
+                    هذه العملية. يتضمن إصلاح أو استبدال عمود الكامات عادة إزالة المحرك وفك الأجزاء المتصلة به.</p>
+                <h2>الوقاية من تلف عمود الكامات</h2>
+                <p>للوقاية من تلف عمود الكامات، يمكن اتباع بعض الإجراءات الوقائية:</p>
+                <p>1. تغيير الزيت بانتظام: ينصح بتغيير زيت المحرك وفقًا للجدول الموصى به من قبل الشركة المصنعة للسيارة.
+                </p>
+                <p>2. استخدام زيت ملائم: استخدم نوعًا مناسبًا من زيت التشحيم وفقًا لمواصفات الشركة المصنعة للمحرك.</p>
+                <p>3. تجنب تراكم الرواسب: اتبع الإرشادات المناسبة للحفاظ على نظام التزييت نظيفًا وخاليًا من الرواسب.</p>
+                <p>4. الحفاظ على درجة حرارة المحرك المناسبة: تأكد من أن نظام التبريد في حالة جيدة وأن درجة حرارة المحرك
+                    تبقى في المدى
+                    المناسب</p>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>CARS</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos
+                    iste
+                    aspernatur
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Important Link 1</a></li>
+                    <li><a href="#">Important Link 2</a></li>
+                    <li><a href="#">Important Link 3</a></li>
+                    <li><a href="#">Important Link 4</a></li>
+                    <li><a href="#">Important Link 5</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Egypt, Giza, Inside The Sphinx, Room Number 220</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 18:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20123456789</span>
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img decoding="async" src="imgs/gallery-01.png" alt="" />
+                <img decoding="async" src="imgs/gallery-02.png" alt="" />
+                <img decoding="async" src="imgs/gallery-03.jpg" alt="" />
+                <img decoding="async" src="imgs/gallery-04.png" alt="" />
+                <img decoding="async" src="imgs/gallery-05.jpg" alt="" />
+                <img decoding="async" src="imgs/gallery-06.png" alt="" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- End Footer -->
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إيجي تيونينج</title>
+    <link rel="stylesheet" href="../egytuning/index.css/template.css">
+    <link rel="stylesheet" href="../egytuning/index.css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../egytuning/index.css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="../egytuning/index2.html" class="logo">إيجي تيونينج</a>
+            <ul class="main-nav" id="mainnav">
+                <li><a href="../egytuning/index2.html">الصفحة الرئيسية</a></li>
+                <li><a class="active" href="../egytuning/articales.html">اجزاء السيارات</a></li>
+                <li><a href="../egytuning/buy&sell.html">البيع والشراء</a></li>
+                <li><a href="../egytuning/index2.html#services">الخدمات</a></li>
+                <li onclick="ToggleMenu()">
+                    <a href="#">روابط اخرى</a>
+                    <!-- Start Megamenu -->
+                    <div class="megamenu" id="navbar">
+                        <ul class="links">
+                            <li>
+                                <a href="#"><i class="far fa-user fa-fw"></i>تسجيل الدخول </a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#team"><i class="fa-regular fa-circle-check"></i>
+                                    الاكثر شهرة</a>
+                            </li>
+                        </ul>
+                        <ul class="links">
+                            <li>
+                                <a href="../egytuning/index2.html#events"><i
+                                        class="far fa-calendar-alt fa-fw"></i>الايفينت</a>
+                            </li>
+                            <li>
+                                <a href="../egytuning/index2.html#gallery"><i class="fa-regular fa-image"></i>الصور</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Megamenu -->
+                </li>
+            </ul>
+            <script>
+                let megamenu = document.getElementById('navbar');
+                function ToggleMenu() {
+                    megamenu.classList.toggle("open-menu")
+                }
+            </script>
+        </div>
+        <script>
+            const links = document.querySelectorAll('.header ul li a');
+            links.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active')
+                })
+            })
+        </script>
+    </div>
+    <!-- end header -->
+    <!-- sell -->
+    <div class="sell">
+        <li>
+            <a href="../egytuning/sell.html">+للبيع</a>
+        </li>
+    </div>
+    <div class="articales">
+        <h2 class="main-title">اجزاء السيارات</h2>
+        <p>تقدر من هنا تعرف وظيفة كل جزء في العربية وسبب عطلة</p>
+        <div class="container">
+            <div class="box">
+                <img src="../egytuning/image/carpart/images.jpeg">
+                <div class="content">
+                    <h3>البستم (المكبس)</h3>
+                    <p>هو قطعة على شكل قرص تنزلق داخل أسطوانة محرك أو أسطوانة في آلة يراد إدارتها عن طريق ذراع متصل أسفل
+                        الأسطوانة.
+
+                        استخدامات الكباس شائعة في محركات السيارات وفي المحركات البخارية مثلما في القطارات التي تسير
+                        بالفحم أو بالديزل. والمكبس
+                        بذاته يعني الكباس والأسطوانة معا. والكباس هو أحد مكونات المحركات الترددية والمضخات وضاغطات
+                        الغاز. ويوجد بداخل أسطوانة
+                        وهو الناقل الأساسي للحركة حيث يقلص حجم غرفة الاحتراق في مكبس الاحتراق الداخلي حتى يحدث فيها
+                        اشتعال بخار الوقود فيزداد
+                        الضغط في حجرة الاشتعال مما يؤدي إلى اندفاع الكباس في الأسطوانة إلى الخارج، وهذا هو منشأ الحركة.
+                        يتصل الكباس من اسفل
+                        بذراع ينقل حركته إلى عمود مرفقي الذي يحول حركة المكبس من «طالع-نازل» إلى حركة دورانية.
+
+                        في العادة في محركات السيارات يتصل العمود المرفقي بعدد 4 أو 6 من الأسطوانات تقوم بتحريكه وهي تعمل
+                        على التوالي لكي تتم
+                        دورة عمود المرفق دورة كاملة، أي أن الاشتعال في الأسطوانات يتم بعد بعضها البعض لتكملة دورة عمود
+                        المرفق. وكلما زاد عد
+                        الأسطوانات في محرك السيارة زادت قدرة المحرك.
+
+                        بغرض احكام انتقال حركة الكباس داخل الأسطوانة فتوجد على سطح الكباس حلقات معدنية تحكم تلامس سطح
+                        الكباس بالأسطوانة، وبذلك
+                        لا تضيع قوة الغاز المتمدد بالتسرب بين سطح الكباس والاسطوانة، فيعطي كل قوته في تحريك الكباس.
+                        والهدف من الكباس في المحرك
+                        نقل القوة من الغاز المتمدد في الأسطوانة إلى العمود المرفقي عن طريق ذراع الكباس.
+
+                        في بعض المحركات يعمل المكبس كصمام وذلك من خلال تغطية بعض الممرات في جدار الأسطوانة أو فتحها.
+                        مادة الصنع:
+                        يصنع البستم من خامات مختلفة منها حديد الزهر أو حديد نصف صلب، ونظرا لأن الأمنيوم وزن أخف عن باقى
+                        المعادن الأخرى فبيكون
+                        معظم المحركات السيارات يوجد جواها بستم أو (مكبس) من الألمنيوم</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/BISTEM.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/crank.jpeg">
+                <div class="content">
+                    <h3>عمود الكرنك</h3>
+                    <p>توليد عزم الدوران ونقله إلى النابض توليد الحركة الدائرية أو الطاقة الحركية عبر تحويل الحركة
+                        المستقيمة الخطية للبستم إلى
+                        دائرية حركية تلقي القوة المؤثرة على الكباسات ونقلها إلى المحامل نقل الحركة الدورانية لعمود
+                        الحدبات عبر حزام التايمنج
+                        وتحويلها إلى حركة خطية لفتح وغلق الصمامات</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/crank.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/clinder.jpeg">
+                <div class="content">
+                    <h3>غرفة الأسطوانات (السلندرات)</h3>
+                    <p>تعتبر الأسطوانة جزءًا حيويًا من المحرك. إنها غرفة يتم فيها احتراق الوقود وتوليد الطاقة. تتكون
+                        الأسطوانة من مكبس وصمامين
+                        في الأعلى ؛ مدخل وصمامات العادم. يتحرك المكبس لأعلى ولأسفل ، وتولد حركته الترددية القوة التي
+                        تحرك مركبتك. بشكل عام ،
+                        كلما زاد عدد الأسطوانات الموجودة بمحركك ، زادت الطاقة التي يتم إنتاجها. تحتوي معظم السيارات على
+                        محرك 4 أو 6 أو 8
+                        أسطوانات. تشير الأرقام إلى عدد الأسطوانات ، وسيتم وضعها في خط مستقيم أو على شكل حرف V أو في
+                        ترتيب مسطح.</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/clinder.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/kamat.jpeg">
+                <div class="content">
+                    <h3>الكامات</h3>
+                    <p>يتيح مستشعر عمود الكامات لنظام التحكم في المحرك أن يحدد الموقع الدقيق لمحرك ذراع الإدارة. تكون
+                        هذه المعلومة ضروريةً
+                        لأسبابٍ عديدة من بينها حساب موعد الإشعال والحقن. يمكنك في هذه الصفحة استقراء كيفية ملاحظة وجود
+                        خلل في مستشعر عمود
+                        الكامات وماهية الأخطاء المفيدة عند تقصي الأخطاء.</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/kamat.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/semam.jpeg">
+                <div class="content">
+                    <h3>الصمامات</h3>
+                    <p>تتمثل وظيفة صمامات محرك السيارة بشكلٍ رئيسي في تنظيم دخول الوقود إلى غرفة الاحتراق في المحرك من
+                        جهة، وخروج انبعاثات
+                        الغاز والوقود من المحرك إلى عادم السيارة من جهة أخرى، كما تضبط صمامات محرك السيارة صوت المحرك
+                        وتحافظ على خفض الضوضاء
+                        التي قد تصدر منه وبالتالي خفض صوت السيارة وجعلها أكثر هدوءاً، إلى جانب منع تسريب الوقود من غرفة
+                        الاحتراق والإسهام في خفض
+                        استهلاكه من خلال التنظيم الدقيق والمقنن في ضخه للمحرك بحسب القدر الذي يحتاجه ليؤدي عمله بأفضل
+                        صورة، ويختلف عدد صمامات
+                        محرك السيارة باختلاف نوع السيارة والمحرك وعدد اسطواناته، في حين يُخصَّص لكل اسطوانة صمامين بحدٍ
+                        أدنى وقد يزيد عددها في
+                        بعض الأنواع بحسب المحرك والسيارة، ذلك مع الإشارة إلى دور زيادة عدد صمامات المحرك في مضاعفة عزم
+                        وتسارع السيارة وتحقيق
+                        احتراق أكبر للوقود داخل غرفة الاحتراق إلى جانب تفريغ أسرع للوقود المحترق بواسطة عادم السيارة،
+                        إلا أن زيادة عدد صمامات
+                        المحرك تساوي زيادة في استهلاك السيارة للوقود.</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/semam.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/mobena.jpeg">
+                <div class="content">
+                    <h3>الموبينه</h3>
+                    <p>تعتبر موبينة السيارة من الأجزاء الكهربائية، وهي جزء من نظام الإشعال، ويطلق عليها أسماء أخرى مثل
+                        ملف
+                        الإشعال، والكويل، ويتلخص عملها في تحويل فرق الجهد المنخفض الصادر عن البطارية (12 فولت) إلى فرق
+                        جهد مرتفع يصل إلى (12 ألف
+                        فولت) حتى تتمكن شمعات الاحتراق (البواجي) من تكوين شرارة إشعال داخل حجرة الاحتراق بالمحرك، من أجل
+                        إشعال خليط الوقود
+                        والهواء المضغوطين.
+                    </p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/mobena.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/bogeah.jpeg">
+                <div class="content">
+                    <h3>البوجيهات</h3>
+                    <p>تعتبر البوجيهات أحد أهم أضلاع مثلث الأحتراق فى محركات الأحتراق الداخلي التى تستخدم البنزين (
+                        جازولين كوقود ) , ذلك
+                        المثلث التى لا تكتمل عملية الأحتراق الا به و هو :
+
+                        تحقيق ضغط مناسب داخل السلندر ( كبس مناسب ) يرفع درجة حرارة مخلوط الهواء و بخار البنزين الى درجة
+                        حرارة مناسبه لبدء عملية
+                        التفجير و من ثم الأحتراق .
+                        توفير مخلوط هواء و بخار بنزين مناسب ( النسبة المثالية 1:14.7 حجم جزئ هواء الى حجم بخار بنزين ).
+                        توفير شرارة أشعال مناسبة فى توقيت مناسب .
+                    </p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/pogeah.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../egytuning/image/carpart/rashash.jpeg">
+                <div class="content">
+                    <h3>رشاشات البنزين</h3>
+                    <p>يتخذ هذا النوع من بخاخات السيارة موقعاً له في نهاية مشعب السحب أو مشعب الهواء، ويتم توزيع ورش
+                        خليط الوقود والهواء إلى
+                        اسطوانات المحرك على هيئة رذاذ في وقتٍ واحدٍ عبر هذا النوع، الأمر الذي يسهم في توزيع أكثر دقةٍ
+                        للوقود، مما يعزز كفاءة
+                        المحرك ويقلل استهلاكه من الوقود</p>
+                </div>
+                <div class="info">
+                    <a href="../egytuning/gas.html">قراءة المزيد</a>
+                    <i class="fa-solid fa-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- end articales -->
